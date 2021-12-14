@@ -4,8 +4,8 @@
   --card-bg-color: #f5f5f5;
   --text-color: #555;
   --blockquote-color: #fff;
-  --link-color: #555;
-  --link-hover-color: #222;
+  --link-color: #333;
+  --link-hover-color: #369;
   --brand-color: #fff;
   --brand-hover-color: #fff;
   --table-row-odd-bg-color: #f9f9f9;
@@ -168,7 +168,7 @@ template {
 }
 ::selection {
   background: #369;
-  color: #eee;
+  color: #ddd;
 }
 html,
 body {
@@ -243,13 +243,13 @@ video {
   max-width: 100%;
 }
 hr {
-  background-image: repeating-linear-gradient(-45deg, #eee, #eee 4px, transparent 4px, transparent 8px);
+  background-image: repeating-linear-gradient(-45deg, #ddd, #ddd 4px, transparent 4px, transparent 8px);
   border: 0;
   height: 3px;
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #eee;
+  border-left: 4px solid #ddd;
   color: var(--blockquote-color);
   margin: 0;
   padding: 0 15px;
@@ -271,7 +271,7 @@ kbd {
   border: 1px solid #ccc;
   border-radius: 0.2em;
   box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
-  color: #333;
+  color: #555;
   font-family: inherit;
   padding: 0.1em 0.3em;
   white-space: nowrap;
@@ -302,7 +302,7 @@ td {
 th,
 td {
   border: 1px solid #f5f5f5;
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid #ddd;
 }
 th {
   font-weight: 700;
@@ -391,12 +391,12 @@ pre {
 }
 pre,
 code {
-  font-family: 'PT Mono', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Courier New', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
   background: #e1f5fe;
   border-radius: 3px;
-  color: #333;
+  color: #555;
   padding: 2px 4px;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -628,7 +628,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab,
 .tabs-comment ul.nav-tabs li.tab {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 3px solid transparent;
@@ -991,7 +991,7 @@ pre .javascript .function {
   margin: 0;
 }
 .site-subtitle {
-  color: #eee;
+  color: #ddd;
   font-size: 0.8125em;
   margin: 10px 0;
 }
@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #38a19d;
+  background: #2dff06;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
