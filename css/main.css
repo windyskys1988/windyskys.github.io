@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #0a5554;
+  background: #9e1dff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2585,6 +2585,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
+  background: url("https://wx1.sinaimg.cn/large/006ueGBdly1gr1i7tdgx2j61940u07bl02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
