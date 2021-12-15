@@ -177,7 +177,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Lora', 'Noto Serif SC', Georgia, -apple-system, 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: 'Lora', Georgia, -apple-system, 'Noto Serif SC', 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
   font-size: 1em;
   line-height: 2;
 }
@@ -193,7 +193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lora', 'Noto Serif SC', Georgia, -apple-system, 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: 'Lora', Georgia, -apple-system, 'Noto Serif SC', 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -391,7 +391,7 @@ pre {
 }
 pre,
 code {
-  font-family: 'Ubuntu', consolas, Menlo, monospace, 'Lora', 'Noto Serif SC', Georgia, -apple-system, 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: 'Ubuntu', consolas, Menlo, monospace, 'Lora', Georgia, -apple-system, 'Noto Serif SC', 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
 }
 code {
   background: #e1f5fe;
@@ -985,7 +985,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'Lora', 'Noto Serif SC', Georgia, -apple-system, 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: 'Lora', Georgia, -apple-system, 'Noto Serif SC', 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #25a2e5;
+  background: #c48e58;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1513,7 +1513,7 @@ pre .javascript .function {
   }
 }
 .post-body {
-  font-family: 'Lora', 'Noto Serif SC', Georgia, -apple-system, 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: 'Lora', Georgia, -apple-system, 'Noto Serif SC', 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1819,7 +1819,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Lora', 'Noto Serif SC', Georgia, -apple-system, 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: 'Lora', Georgia, -apple-system, 'Noto Serif SC', 'Nimbus Roman No9 L', "PingFang SC", "Microsoft", 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
