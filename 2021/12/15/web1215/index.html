@@ -25,26 +25,22 @@
     var CONFIG = {"hostname":"word2dream.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#0099CC","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="阅读文献A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation 这篇文献提出了一种新颖的方法，用于解决光场深度估计的边缘模糊的问题，且实现非常简洁，只需要消耗很少的计算量。">
+  <meta name="description" content="这辈子再也不想弄前端 今天对博客增补了一些东西">
 <meta property="og:type" content="article">
-<meta property="og:title" content="论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation">
-<meta property="og:url" content="http://word2dream.xyz/2021/12/14/paper211214/index.html">
+<meta property="og:title" content="给博客添加谷歌字体源&amp;添加改写单条博文浏览字数设置">
+<meta property="og:url" content="http://word2dream.xyz/2021/12/15/web1215/index.html">
 <meta property="og:site_name" content="静默的月亮">
-<meta property="og:description" content="阅读文献A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation 这篇文献提出了一种新颖的方法，用于解决光场深度估计的边缘模糊的问题，且实现非常简洁，只需要消耗很少的计算量。">
+<meta property="og:description" content="这辈子再也不想弄前端 今天对博客增补了一些东西">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s4.ax1x.com/2021/12/14/ovJ85q.png">
-<meta property="og:image" content="https://s4.ax1x.com/2021/12/14/ovHfCd.png">
-<meta property="og:image" content="https://s4.ax1x.com/2021/12/14/ovqPyt.png">
-<meta property="og:image" content="https://s4.ax1x.com/2021/12/14/ovqQO0.png">
-<meta property="article:published_time" content="2021-12-14T07:37:12.735Z">
-<meta property="article:modified_time" content="2021-12-14T10:55:09.140Z">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/15/ozNyRI.png">
+<meta property="article:published_time" content="2021-12-15T02:19:50.000Z">
+<meta property="article:modified_time" content="2021-12-15T02:51:00.020Z">
 <meta property="article:author" content="windyskys">
-<meta property="article:tag" content="light field">
-<meta property="article:tag" content="depth estimation">
+<meta property="article:tag" content="web">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s4.ax1x.com/2021/12/14/ovJ85q.png">
+<meta name="twitter:image" content="https://s4.ax1x.com/2021/12/15/ozNyRI.png">
 
-<link rel="canonical" href="http://word2dream.xyz/2021/12/14/paper211214/">
+<link rel="canonical" href="http://word2dream.xyz/2021/12/15/web1215/">
 
 
 <script id="page-configurations">
@@ -57,7 +53,7 @@
   };
 </script>
 
-  <title>论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation | 静默的月亮</title>
+  <title>给博客添加谷歌字体源&添加改写单条博文浏览字数设置 | 静默的月亮</title>
   
 
 
@@ -177,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://word2dream.xyz/2021/12/14/paper211214/">
+    <link itemprop="mainEntityOfPage" href="http://word2dream.xyz/2021/12/15/web1215/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -190,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation
+          给博客添加谷歌字体源&添加改写单条博文浏览字数设置
         </h1>
 
         <div class="post-meta">
@@ -202,7 +198,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-12-14 15:37:12 / 修改时间：18:55:09" itemprop="dateCreated datePublished" datetime="2021-12-14T15:37:12+08:00">2021-12-14</time>
+              <time title="创建时间：2021-12-15 10:19:50 / 修改时间：10:51:00" itemprop="dateCreated datePublished" datetime="2021-12-15T10:19:50+08:00">2021-12-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -210,7 +206,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/paper/" itemprop="url" rel="index"><span itemprop="name">paper</span></a>
+                  <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a>
                 </span>
             </span>
 
@@ -220,7 +216,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>870字</span>
+              <span>579字</span>
             </span>
 
         </div>
@@ -232,54 +228,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>阅读文献<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9517020">A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation</a></p>
-<p>这篇文献提出了一种新颖的方法，用于解决光场深度估计的边缘模糊的问题，且实现非常简洁，只需要消耗很少的计算量。</p>
+        <p><del>这辈子再也不想弄前端</del></p>
+<p>今天对博客增补了一些东西</p>
  <span id="more"></span>
 
-<h1 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h1><p>文章先提出了先前研究存在的问题。一个是<code>occlusion</code>明显估计错误，例如图表Fig1中的<code>LF_OOC</code>，和<code>GT</code>相比明显是错误的。作者同时列出了他们的方法的预测结果(h)，和真实的结果相近。</p>
-<p><img src="https://s4.ax1x.com/2021/12/14/ovJ85q.png" alt="Fig.1 先前研究"></p>
-<p>所以作者介绍了自己提出的方法的优越性：一个是能正确地估计<code>occlusion</code>，另一个就是计算量是明显降低的。</p>
-<p>这里，作者主要建立了一个<code>cost volume</code>，这个<code>cost volume</code>用来计算<code>exclusion</code>之后留下的像素的数量，提出的方法叫做the occlusion-aware vote cost (OAVC)。</p>
-<p>作者同样介绍了一些related work：</p>
-<p><strong>Photo-consistency</strong></p>
-<ul>
-<li>依据的是<code>the Lambertian assumption</code></li>
-<li>提到两种方法：<code>correspondence</code> 和 <code>defocus</code></li>
-</ul>
-<p><strong>Occlusion handling</strong></p>
-<p>提到了一些先前的工作的局限性。</p>
-<p><strong>Learning-based</strong></p>
-<p>提到了前人的<code>DL</code>方法，如：<code>Epinet</code>、<code>Flownet</code>。</p>
-<h1 id="Theory-and-Method"><a href="#Theory-and-Method" class="headerlink" title="Theory and Method"></a>Theory and Method</h1><p>这里作者主要讨论了<code>photo consistency</code> 和<code>space consistency</code>在<code>refocused</code>时的一些性质。</p>
-<p><img src="https://s4.ax1x.com/2021/12/14/ovHfCd.png" alt="consistency.png"></p>
-<p>论文探讨了由<code>Lambertian assumption</code>衍生出的在correctly refocused图像中的<code>photo consistency</code>，比incorrectly refocused图像中的空间一致性更加强烈。由图上的KJ和EC线可以看出来，EC是存在<code>occlusion</code>的<code>correctly refocused</code>产生的线，其一致性更紧密。</p>
-<p>因此通过一个特定的比较小的阈值，不仅可以将准确重聚焦的图像的未被遮挡的部分从遮挡部分区别出来，也可以区别出不准确聚焦的<code>angular patch</code>。</p>
-<p>怎么确定这个阈值是另外一个问题。论文作者绘制了概率分布直方图，来探讨阈值的分布。</p>
-<p><img src="https://s4.ax1x.com/2021/12/14/ovqPyt.png" alt="Pixel Deviation Histogram"></p>
-<p>通过不同的像素差的条件下，准确重聚焦的像素点和不准确重聚焦的像素点的分布概率直方图，可以看到通过一定阈值区分这二者是可行的。</p>
-<p><img src="https://s4.ax1x.com/2021/12/14/ovqQO0.png" alt="ovqQO0.png"></p>
-<p>表格则通过<code>Difference</code>一项确定这个阈值是0.005，因为此时两者的差值积累达到最大。</p>
-<h1 id="Occlusion-aware-Vote-Cost"><a href="#Occlusion-aware-Vote-Cost" class="headerlink" title="Occlusion-aware Vote Cost"></a>Occlusion-aware Vote Cost</h1><p>论文作者提出了OAVC的公式，和相应的自适应阈值的公式，最后提出了优化的方法是使用<code>WMF</code>。</p>
-<p>公式推理过程待补充。</p>
-<h1 id="result"><a href="#result" class="headerlink" title="result"></a>result</h1><p>作者从若干方面分析了实验的结果，得出了相应的结论。</p>
-<ul>
-<li>在噪声环境下表现较差</li>
-<li>该方法的泛化性能很好，优于部分<code>DL</code>模型，在<code>overall average</code>上综合表现最好</li>
-<li>在<code>backgammon Fattening</code> 数据集上表现最好，说明在处理复杂遮挡的情形下表现很好</li>
-<li><code>Q25</code>的得分也很好，在非深度学习模型里是最佳的</li>
-<li>比较了不同阈值的得分结果，自适应阈值能够取得更佳的得分，不过一个固定的阈值已经能够得到很好的结果</li>
-<li>比较了计算消耗，当然该篇论文提出的方法性能最好</li>
-</ul>
-<p>最后，作者提出了一些不足：</p>
-<ul>
-<li>很难处理噪声场景</li>
-<li>对非遮挡的情况处理效果也不是很好，当然这个不是模型的适用范围嘛</li>
-</ul>
-<h1 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h1><p>阅读论文过程中，对一些光场的专业名词还不是很了解，慢慢学习吧。</p>
-<p>这边记录一些：</p>
-<p><code>angular patch</code></p>
-<p><code>Lambertian assumption</code></p>
-<p><code>sub-pixel interpolation</code></p>
+<h1 id="添加谷歌字体源"><a href="#添加谷歌字体源" class="headerlink" title="添加谷歌字体源"></a>添加谷歌字体源</h1><p>在本地预览能显示字体，怎么推送到网页就不行了_(:з」∠)_</p>
+<p>在网上搜索找到解决方案：要先在head头部引用谷歌字体源。</p>
+<p>在<a target="_blank" rel="noopener" href="https://fonts.google.com/">google fonts</a>寻找自己想要的字体，选择相应的字体和格式，点击select this style，就可以在网页左端看到自己选择的字体的引用link。</p>
+<p><img src="https://s4.ax1x.com/2021/12/15/ozNyRI.png" alt="字体引用"></p>
+<p>我把link插入在了<code>blog\themes\next\layout\_partials\head</code>中的head.swig文件中。</p>
+<p>顺便挑了英文字体lora和代码字体Ubuntu，修改字体的话按照官方文档给的方法就行，或者我在<code>blog\themes\next\source\css\_variables</code>下的base.styl文件里找到font-family的变量进行修改。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Font families.</span></span><br><span class="line">$font-family-chinese      = lora, Georgia, -apple-system, <span class="string">&#x27;Nimbus Roman No9 L&#x27;</span>,<span class="string">&#x27;Noto Serif SC&#x27;</span>, <span class="string">&quot;PingFang SC&quot;</span>,<span class="string">&quot;Microsoft&quot;</span>,<span class="string">&#x27;Microsoft Yahei&#x27;</span>, <span class="string">&#x27;WenQuanYi Micro Hei&#x27;</span>, <span class="string">&#x27;ST Heiti&#x27;</span>, sans-serif, apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;</span><br><span class="line">$font-family-base         = lora, Georgia, -apple-system, <span class="string">&#x27;Nimbus Roman No9 L&#x27;</span>,<span class="string">&#x27;Noto Serif SC&#x27;</span>, <span class="string">&quot;PingFang SC&quot;</span>,<span class="string">&quot;Microsoft&quot;</span>,<span class="string">&#x27;Microsoft Yahei&#x27;</span>, <span class="string">&#x27;WenQuanYi Micro Hei&#x27;</span>, <span class="string">&#x27;ST Heiti&#x27;</span>, sans-serif, apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;</span><br><span class="line">$font-family-base         = get_font_family(<span class="string">&#x27;global&#x27;</span>), $font-family-chinese, sans-serif <span class="keyword">if</span> get_font_family(<span class="string">&#x27;global&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="设置博文前显示字数"><a href="#设置博文前显示字数" class="headerlink" title="设置博文前显示字数"></a>设置博文前显示字数</h1><p>这个主要是发现网上现有的方法都不行，包括官方文档给的配置也有问题，footer部分显示有错误。所以自己重写吧_(:з」∠)_</p>
+<p>先要下载依赖项hexo-wordcount</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<p>在主题配置文件中添加下述定义：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_wordcount:  </span><br><span class="line">	enable: true  </span><br><span class="line">	separated_meta: false  </span><br><span class="line">	item_text_post: true  </span><br></pre></td></tr></table></figure>
+
+<p>然后来到目录<code>blog\themes\next\layout\_macro</code>下，找到<code>symbols_count_time</code>相关的代码段注释掉<del>或者直接删掉</del>，添加以下内容：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.post_wordcount.enable %&#125;</span><br><span class="line">&#123;%- <span class="keyword">if</span> theme.post_wordcount.separated_meta %&#125;&lt;br&gt;&#123;%- endif %&#125;</span><br><span class="line">     &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;post-meta-item&quot;</span> title=<span class="string">&quot;&#123;&#123; __(&#x27;post.wordcount&#x27;) &#125;&#125;&quot;</span>&gt;</span><br><span class="line">     <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-meta-item-icon&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">     <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-file-word&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="xml">     <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line">&#123;%- <span class="keyword">if</span> theme.post_wordcount.item_text_post %&#125;</span><br><span class="line">     &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;post-meta-item-text&quot;</span>&gt;&#123;&#123; __(<span class="string">&#x27;symbols_count_time.count&#x27;</span>) + __(<span class="string">&#x27;symbol.colon&#x27;</span>) &#125;&#125;&lt;/span&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line">     &lt;span&gt;&#123;&#123;  wordcount(post.content) &#125;&#125;字&lt;/span&gt;</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>就ok了</p>
 
     </div>
 
@@ -290,8 +263,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/light-field/" rel="tag"><i class="fa fa-tag"></i> light field</a>
-              <a href="/tags/depth-estimation/" rel="tag"><i class="fa fa-tag"></i> depth estimation</a>
+              <a href="/tags/web/" rel="tag"><i class="fa fa-tag"></i> web</a>
           </div>
 
         
@@ -300,13 +272,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/12/14/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E8%BF%87%E7%A8%8B/" rel="prev" title="使用hexo框架搭建部署在github上的个人博客">
-      <i class="fa fa-chevron-left"></i> 使用hexo框架搭建部署在github上的个人博客
+    <a href="/2021/12/14/paper211214/" rel="prev" title="论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation">
+      <i class="fa fa-chevron-left"></i> 论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/12/15/web1215/" rel="next" title="给博客添加谷歌字体源&添加改写单条博文浏览字数设置">
-      给博客添加谷歌字体源&添加改写单条博文浏览字数设置 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -372,7 +341,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Theory-and-Method"><span class="nav-number">2.</span> <span class="nav-text">Theory and Method</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Occlusion-aware-Vote-Cost"><span class="nav-number">3.</span> <span class="nav-text">Occlusion-aware Vote Cost</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#result"><span class="nav-number">4.</span> <span class="nav-text">result</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%96%91%E9%97%AE"><span class="nav-number">5.</span> <span class="nav-text">疑问</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%B0%B7%E6%AD%8C%E5%AD%97%E4%BD%93%E6%BA%90"><span class="nav-number">1.</span> <span class="nav-text">添加谷歌字体源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8D%9A%E6%96%87%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AD%97%E6%95%B0"><span class="nav-number">2.</span> <span class="nav-text">设置博文前显示字数</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -490,9 +459,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://word2dream.xyz/2021/12/14/paper211214/";
-    this.page.identifier = "2021/12/14/paper211214/";
-    this.page.title = "论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation";
+    this.page.url = "http://word2dream.xyz/2021/12/15/web1215/";
+    this.page.identifier = "2021/12/15/web1215/";
+    this.page.title = "给博客添加谷歌字体源&添加改写单条博文浏览字数设置";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
