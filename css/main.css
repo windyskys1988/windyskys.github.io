@@ -3,7 +3,8 @@
   --content-bg-color: #fff;
   --card-bg-color: #f5f5f5;
   --text-color: #555;
-  --blockquote-color: #fff;
+  --blockquote-color: #104e8b;
+  --blockquote-background-color: rgba(178,223,238,0.3);
   --link-color: #333;
   --link-hover-color: #369;
   --brand-color: #fff;
@@ -249,10 +250,11 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #ddd;
+  border-left: 4px solid #69c;
   color: var(--blockquote-color);
   margin: 0;
   padding: 0 15px;
+  background: var(--blockquote-background-color);
 }
 blockquote cite::before {
   content: '-';
@@ -1168,7 +1170,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #54ffb0;
+  background: #4bcf7d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
