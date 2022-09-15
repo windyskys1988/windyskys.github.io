@@ -34,17 +34,20 @@
 
   <meta name="description" content="最近阅读的几篇文献。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation">
+<meta property="og:title" content="论文笔记若干">
 <meta property="og:url" content="http://word2dream.xyz/2022/09/15/paper220920/index.html">
 <meta property="og:site_name" content="静默的月亮">
 <meta property="og:description" content="最近阅读的几篇文献。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.mjj.today/2022/09/15/940a9972910f8e207b29eb729b571767.png">
+<meta property="og:image" content="https://img.mjj.today/2022/09/15/eda7777f71e1b3ee2518f9a6507d1329.png">
 <meta property="article:published_time" content="2022-09-15T14:00:42.962Z">
-<meta property="article:modified_time" content="2022-09-15T14:10:01.125Z">
+<meta property="article:modified_time" content="2022-09-15T14:29:50.788Z">
 <meta property="article:author" content="windyskys">
 <meta property="article:tag" content="light field">
 <meta property="article:tag" content="depth estimation">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.mjj.today/2022/09/15/940a9972910f8e207b29eb729b571767.png">
 
 <link rel="canonical" href="http://word2dream.xyz/2022/09/15/paper220920/">
 
@@ -59,7 +62,7 @@
   };
 </script>
 
-  <title>论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation | 静默的月亮</title>
+  <title>论文笔记若干 | 静默的月亮</title>
   
 
 
@@ -192,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation
+          论文笔记若干
         </h1>
 
         <div class="post-meta">
@@ -204,7 +207,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-09-15 22:00:42 / 修改时间：22:10:01" itemprop="dateCreated datePublished" datetime="2022-09-15T22:00:42+08:00">2022-09-15</time>
+              <time title="创建时间：2022-09-15 22:00:42 / 修改时间：22:29:50" itemprop="dateCreated datePublished" datetime="2022-09-15T22:00:42+08:00">2022-09-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,7 +225,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>436字</span>
+              <span>896字</span>
             </span>
 
         </div>
@@ -237,19 +240,16 @@
         <p>最近阅读的几篇文献。</p>
  <span id="more"></span>
 
-<h1 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h1><p>文章先提出了先前研究存在的问题。一个是<code>occlusion</code>明显估计错误，例如图表Fig1中的<code>LF_OOC</code>，和<code>GT</code>相比明显是错误的。作者同时列出了他们的方法的预测结果(h)，和真实的结果相近。</p>
-<p>所以作者介绍了自己提出的方法的优越性：一个是能正确地估计<code>occlusion</code>，另一个就是计算量是明显降低的。</p>
-<p>这里，作者主要建立了一个<code>cost volume</code>，这个<code>cost volume</code>用来计算<code>exclusion</code>之后留下的像素的数量，提出的方法叫做the occlusion-aware vote cost (OAVC)。</p>
-<p>作者同样介绍了一些related work：</p>
-<p><strong>Photo-consistency</strong></p>
-<ul>
-<li>依据的是<code>the Lambertian assumption</code></li>
-<li>提到两种方法：<code>correspondence</code> 和 <code>defocus</code></li>
-</ul>
-<p><strong>Occlusion handling</strong></p>
-<p>提到了一些先前的工作的局限性。</p>
-<p><strong>Learning-based</strong></p>
-<p>提到了前人的<code>DL</code>方法，如：<code>Epinet</code>、<code>Flownet</code>。</p>
+<h1 id="VommaNet-an-End-to-End-Network-for-Disparity-Estimation-from-Reflective-and-Texture-less-Light-Field-Images"><a href="#VommaNet-an-End-to-End-Network-for-Disparity-Estimation-from-Reflective-and-Texture-less-Light-Field-Images" class="headerlink" title="VommaNet: an End-to-End Network for Disparity Estimation from Reflective and Texture-less Light Field Images"></a>VommaNet: an End-to-End Network for Disparity Estimation from Reflective and Texture-less Light Field Images</h1><p>文章的动机很直接，就是针对反射和无纹理区域，使用“退一步”的思想，检查更大的区域，来计算边缘视差。也就是说要提取多尺度的特征。由于物体内部的差异值应该是连续的，可以让网络学习其邻点的视差值来估计反射区和无纹理区视差。</p>
+<h2 id="深度可分离卷积（Depthwise-Convolution）"><a href="#深度可分离卷积（Depthwise-Convolution）" class="headerlink" title="深度可分离卷积（Depthwise Convolution）"></a>深度可分离卷积（Depthwise Convolution）</h2><p>主要参考了<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/92134485">知乎上一篇博文</a>的讲解。</p>
+<p>对于一张三通道的图像，经过3×3卷积核的卷积层，假设输出通道数为4，则卷积核shape为3×3×3×4，最终输出4个Feature Map。而深度可分离卷积的思想在于，第一次卷积运算是在一个二维平面内进行。也就是将多通道的输入分离成多个单通道输入处理，卷积核的数量与输入通道数相同。一个三通道的图像经过运算后会相应地生成3个Feature map。</p>
+<p>但是，Depthwise Convolution因此丧失了对卷积处理的深度，无法扩展Feature map，也没有利用不同通道在相同空间位置上的feature信息。因此，又出现了一个Pointwise Convolution，将这些Feature map进行组合生成新的Feature map。Pointwise Convolution类似于常规卷积运算，卷积核的尺寸为 1×1×M，M为上一层的通道数。所以这里的卷积运算会将上一步的map在深度方向上进行加权组合，生成新的Feature map。有几个卷积核就有几个输出Feature map。</p>
+<p> 最后，在参数量一致的情况下，可以加深网络的深度。但是这样的操作是否也一定程度上丧失了通道上的空间相关特征， 相当于通道间感受野变小了。</p>
+<h2 id="网络架构"><a href="#网络架构" class="headerlink" title="网络架构"></a>网络架构</h2><p><img src="https://img.mjj.today/2022/09/15/940a9972910f8e207b29eb729b571767.png" alt="940a9972910f8e207b29eb729b571767.png"></p>
+<p>可以看到主要就是用了一个多尺度的空洞卷积来增大接受野。然后用了一个深度可分离卷积组成的残差块。</p>
+<p><del>这样就能发paper……我为什么不早生四年（。</del></p>
+<h2 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h2><p><img src="https://img.mjj.today/2022/09/15/eda7777f71e1b3ee2518f9a6507d1329.png" alt="eda7777f71e1b3ee2518f9a6507d1329.png"></p>
+<p>其实从实验结果可以看出，相较于传统方法，这个网络架构对于反射区域还是很有效的。关键应该在于多尺度的特征和增大感受野。</p>
 
     </div>
 
@@ -339,7 +339,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text">introduction</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#VommaNet-an-End-to-End-Network-for-Disparity-Estimation-from-Reflective-and-Texture-less-Light-Field-Images"><span class="nav-number">1.</span> <span class="nav-text">VommaNet: an End-to-End Network for Disparity Estimation from Reflective and Texture-less Light Field Images</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E5%8F%AF%E5%88%86%E7%A6%BB%E5%8D%B7%E7%A7%AF%EF%BC%88Depthwise-Convolution%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">深度可分离卷积（Depthwise Convolution）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84"><span class="nav-number">1.2.</span> <span class="nav-text">网络架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">1.3.</span> <span class="nav-text">实验结果</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -459,7 +459,7 @@
   var disqus_config = function() {
     this.page.url = "http://word2dream.xyz/2022/09/15/paper220920/";
     this.page.identifier = "2022/09/15/paper220920/";
-    this.page.title = "论文笔记：A Novel Occlusion-aware Vote Cost for Light Field Depth Estimation";
+    this.page.title = "论文笔记若干";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
